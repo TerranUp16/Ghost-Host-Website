@@ -4,64 +4,84 @@
     <title>Ghost Host, Inc.</title>
     <meta charset="UTF-8">
     <meta name="description" content="Ghost Host- webhosting for the afterlife.">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 	
   <body>
-    <!-- Logo Banner -->
-    <a href="index.html">
-      <img src="images/ghost_host_banner.svg" alt="Ghost Host, Inc Banner">
-    </a>
     <!-- Navigation -->
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="html/products.html">Products</a>
-      <a href="html/contact.html">Contact</a>
+    <nav id="banner">
+      <a href="index.html">
+        <img src="images/ghost_host_banner.svg" alt="Ghost Host, Inc Banner">
+      </a>
+      <a class="products-button" href="html/products.html">
+        <button type="button">View Our Products</button>
+      </a>
+      <a id="contact-button" href="html/contact.html">
+        <button type="button">Contact Us</button>
+      </a>
     </nav>
+
     <!-- Header -->
-    <header>
-      <h1>Reach the Living... from Beyond!</h1>
+    <header id="from-beyond">
+      <h1>Reach the Living... from <span id="beyond">Beyond</span>!</h1>
     </header>
     <main>
       <!-- Pitch -->
       <section id="pitch">
-        <h2>Why <em>Ghost Host</em></h2>
-        <p>
-          At <em>Ghost Host</em>, we know what it is like to be a ghost capable of sensing and manipulating radio waves. Like you, we too have used our powers to manipulate Wi-Fi traffic from the living to redirect their web browser to <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Rick Roll</a>.
-        </p>
-        <p>
-          But we also know Rick Rolling gets old after a few thousand years- despite Rick Astley's pledge that he's, <q>never gonna give you up</q>. At some point in your afterlife, you want to send the living's web traffic to somewhere... more.
-        </p>
-        <p>
-          <em>Ghost Host</em> provides you with the <strong>web hosting</strong> you need to send your haunts on a custom-tailored journey. Do you want to make your victims believe they've been sent back in time? <em>Ghost Host</em> can help you create a living replica of an early 90s website you can direct your haunts to fool them. Or maybe you want to teach your haunts how to play <em>Phasmophobia</em>. Whatever your ideal web browser haunts entail, <em>Ghost Host</em> is here to help you!
-        </p>
+        <div class="breaker" id="dc"></div>
+        <div id="pitch-text">
+          <h2>Why <em>Ghost Host</em>?</h2>
+          <p>
+            At <em>Ghost Host</em>, we know what it is like to be a ghost capable of sensing and manipulating radio waves. Like you, we too have used our powers to manipulate Wi-Fi traffic from the living to redirect their web browser to <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Rick Roll</a>.
+          </p>
+          <p>
+            But we also know Rick Rolling gets old after a few thousand years- despite Rick Astley's pledge that he's, <q>never gonna give you up</q>. At some point in your afterlife, you want to send the living's web traffic to somewhere... more.
+          </p>
+          <p>
+            <em>Ghost Host</em> provides you with the <strong>web hosting</strong> you need to send your haunts on a custom-tailored journey. Do you want to make your victims believe they've been sent back in time? <em>Ghost Host</em> can help you create a living replica of an early 90s website you can direct your haunts to fool them. Or maybe you want to teach your haunts how to play <em>Phasmophobia</em>. Whatever your ideal web browser haunts entail, <em>Ghost Host</em> is here to help you!
+          </p>
+        </div>
       </section>
       <!-- Testimonials -->
       <section id="customers">
-        <img src="images/hq.jpg" alt="Headquarters Photo" height="200">
-        <h2>Happy Haunters</h2>
-        <p class="lead">
-          Don't just take our word for it though, read what our happy haunters have to say!
-        </p>
-        <blockquote class="testimonial" cite="https://happy-little-haunter.notareal.url">
-          <em>Ghost Host</em> helped me put my <em>Phlappy Phantom</em> game on the web! Before <em>Ghost Host</em>, I had to spend most of my time finding ways to use my powers to hack peoples' computers to get my game installed on them. But now, I can use my powers to redirect the living right to my game in their web browser. Before they even think to question if a malicious program took over their computer, they start playing my game where they get to guide little, flapping me to the finish line! I really love watching the surprise and joy on their faces.
-          <br>
-          <cite id="friendly-phantom">-Cresper the Friendly Phantom</cite>
-        </blockquote>
-        <blockquote class="testimonial" cite="https://demon-stalker.notareal.url">
-          My haunting had become a little one-dimensional... until I heard about <em>Ghost Host</em>. I really wanted to drive home the feeling that someone has dug deeply into your personal life and is in control of your personal devices. So <em>Ghost Host</em> has helped me make online galleries for each of the families I am currently haunting. I download pictures the families post on social media and upload them to my <em>Ghost Host</em> galleries. Then, when the haunts are using their phones, I redirect them to my <em>Ghost Host</em> gallery for that haunt, and seeing the dread on their faces as they see their own pictures randomly showing-up on their phone... it's priceless.
-          <br>
-          <cite id="demon-stalker">-Joe Goldberg the Demonic Stalker</cite>
-        </blockquote>
+        <img id="ghost" src="images/ghost_host_ghost.svg" alt="Ghost picture">
+        <div id="haunters">
+          <h2>Happy Haunters</h2>
+          <p class="lead">
+            Don't just take our word for it though, read what our happy haunters have to say!
+          </p>
+        </div>
+        <div id="testimonials">
+          <blockquote class="testimonial" cite="https://happy-little-haunter.notareal.url">
+            <em>Ghost Host</em> helped me put my <em>Phlappy Phantom</em> game on the web! Before <em>Ghost Host</em>, I had to spend most of my time finding ways to use my powers to hack peoples' computers to get my game installed on them. But now, I can use my powers to redirect the living right to my game in their web browser. Before they even think to question if a malicious program took over their computer, they start playing my game where they get to guide little, flapping me to the finish line! I really love watching the surprise and joy on their faces.
+            <div class="citation">
+              <cite id="friendly-phantom">-Cresper the Friendly Phantom</cite>
+            </div>
+          </blockquote>
+          <blockquote class="testimonial" cite="https://demon-stalker.notareal.url">
+            My haunting had become a little one-dimensional... until I heard about <em>Ghost Host</em>. I really wanted to drive home the feeling that someone has dug deeply into your personal life and is in control of your personal devices. So <em>Ghost Host</em> has helped me make online galleries for each of the families I am currently haunting. I download pictures the families post on social media and upload them to my <em>Ghost Host</em> galleries. Then, when the haunts are using their phones, I redirect them to my <em>Ghost Host</em> gallery for that haunt, and seeing the dread on their faces as they see their own pictures randomly showing-up on their phone... it's priceless.
+            <div class="citation">
+              <cite id="demon-stalker">-Joe Goldberg the Demonic Stalker</cite>
+            </div>
+          </blockquote>
+        </div>
+      </section>
+      <section id="get-started">
+        <a class="products-button" href="html/products.html">
+          <button type="button">Get Started</button>
+        </a>
       </section>
     </main>
-    <hr class="footer-divider">
+    <div class="footer-divider"></div>
     <footer>
       <!-- Company information -->
-      <p class="footer">
-        <small id="signature">Ghost Host Inc. 2021</small>
-      </p>
-      <!-- Legal -->
-      <h4 class="legal-header">Legal Disclaimer</h4>
+      <div id="parallel-footer">
+        <p id="sig" class="footer">
+          <small id="signature">Ghost Host Inc. 2021</small>
+        </p>
+        <!-- Legal -->
+        <div class="legal-header">Legal Disclaimer</div>
+      </div>
       <p class="footer legal">
         <small><em>Ghost Host Inc.</em> does not perform, provide, or encourage malicious acts against living or non-living human beings or animals. <em>Ghost Host Inc.</em> is only a provider of web and domain hosting and services. <em>Ghost Host Inc.</em> is not responsible for the content customers of <em>Ghost Host Inc.</em> upload or host on web hosting infrastructure supplied by <em>Ghost Host Inc.</em> Likewise, <em>Ghost Host Inc.</em> cannot be held responsible for hauntings, stalkings, or other events in which a website hosted on <em>Ghost Host Inc.</em> infrastructure is involved. Please respect the laws of the living and use <em>Ghost Host Inc.</em> products responsibly.</small>
       </p>
