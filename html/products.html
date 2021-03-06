@@ -49,7 +49,7 @@
             <dt >Grave Stone</dt>
             <dd>
               <ul class="specs">
-                <li>Virtual Machine</li>
+                <li class="server-type">Virtual Machine</li>
                 <li>2 <abbr title="virtual Central Processing Cores">vCPU</abbr></li>
                 <li>4<abbr title="Gigabytes">GB</abbr> <abbr title="Random Access Memory">RAM</abbr></li>
                 <li>25<abbr title="Gigabytes">GB</abbr> of Storage</li>
@@ -61,11 +61,11 @@
             <dt>Spirit Box</dt>
             <dd>
               <ul class="specs">
-                <li>Dedicated Server</li>
-                <li><a href="https://ark.intel.com/content/www/us/en/ark/products/191040/intel-xeon-e-2236-processor-12m-cache-3-40-ghz.html">6 Cores/12 Threads Intel Xeon E-2236 Processor</a></li>
+                <li class="server-type">Dedicated Server</li>
+                <li><a href="https://ark.intel.com/content/www/us/en/ark/products/191040/intel-xeon-e-2236-processor-12m-cache-3-40-ghz.html">Intel Xeon E-2236 Processor</a></li>
                 <li>32<abbr title="Gigabytes">GB</abbr> <abbr title="Twice as much bandwidth">Dual Channel</abbr> <abbr title="Dual Data Rate Generation 4">DDR4</abbr> <abbr title="Random Access Memory">RAM</abbr></li>
-                <li>4 <a href="https://www.samsung.com/us/business/products/computing/ssd/enterprise/883-dct-480gb-mz-7lh480ne/">Samsung 883 DCT 480<abbr title="Gigabytes">GB</abbr> <abbr title="Solid State Drives">SSDs</abbr></a> in <abbr title="Redundant Array of Independent Disks">RAID</abbr> 10</li>
-                <li><a href="https://ark.intel.com/content/www/us/en/ark/products/88209/intel-ethernet-converged-network-adapter-x550-t2.html">Intel Ethernet Converged Network Adapter X550-T2</a> for 10<abbr title="Gigbits per second">Gbps</abbr> uplink</li>
+                <li>4x <a href="https://www.samsung.com/us/business/products/computing/ssd/enterprise/883-dct-480gb-mz-7lh480ne/">Samsung 883 DCT 480<abbr title="Gigabytes">GB</abbr> <abbr title="Solid State Drives">SSDs</abbr></a> in <abbr title="Redundant Array of Independent Disks">RAID</abbr> 10</li>
+                <li><a href="https://ark.intel.com/content/www/us/en/ark/products/88209/intel-ethernet-converged-network-adapter-x550-t2.html">Intel X550-T2</a> for 10<abbr title="Gigbits per second">Gbps</abbr> uplink</li>
                 <li class="server-product-price">$299.99 <abbr title="United States Dollars">USD</abbr> per month</li>
               </ul>
             </dd>
@@ -74,26 +74,23 @@
             <dt>Revenant Rig</dt>
             <dd>
               <ul class="specs">
-                <li>Dedicated Server</li>
-                <li><a href="https://www.amd.com/en/products/cpu/amd-epyc-7702p">64 Cores/128 Threads AMD Epyc 7702P Processor</a></li>
-                <li>128<abbr title="Gigabytes">GB</abbr> <abbr title="Eight times as much bandwidth">Eight Channel</abbr> <abbr title="Dual Data Rate Generation 4">DDR4</abbr> <abbr title="Random Access Memory">RAM</abbr></li>
-                <li>8 <a href="https://www.samsung.com/us/business/products/computing/ssd/enterprise/983-dct-960gb-mz-qlb960ne/">Samsung 983 DCT 960<abbr title="Gigabytes">GB</abbr> <abbr title="Solid State Drives">SSDs</abbr></a> in <abbr title="Redundant Array of Independent Disks">RAID</abbr> 10</li>
-                <li>Quad <a href="https://ark.intel.com/content/www/us/en/ark/products/88209/intel-ethernet-converged-network-adapter-x550-t2.html">Intel Ethernet Converged Network Adapter X550-T2</a> for combined 40<abbr title="Gigbits per second">Gbps</abbr> uplink</li>
+                <li class="server-type">Dedicated Server</li>
+                <li><a href="https://www.amd.com/en/products/cpu/amd-epyc-7702p">AMD Epyc 7702P Processor</a></li>
+                <li>128<abbr title="Gigabytes">GB</abbr> <abbr title="Eight times as much bandwidth">8-Channel</abbr> <abbr title="Dual Data Rate Generation 4">DDR4</abbr> <abbr title="Random Access Memory">RAM</abbr></li>
+                <li>8x <a href="https://www.samsung.com/us/business/products/computing/ssd/enterprise/983-dct-960gb-mz-qlb960ne/">Samsung 983 DCT 960<abbr title="Gigabytes">GB</abbr> <abbr title="Solid State Drives">SSDs</abbr></a> in <abbr title="Redundant Array of Independent Disks">RAID</abbr> 10</li>
+                <li>Quad <a href="https://ark.intel.com/content/www/us/en/ark/products/88209/intel-ethernet-converged-network-adapter-x550-t2.html">Intel X550-T2</a> for 40<abbr title="Gigbits per second">Gbps</abbr> uplink</li>
                 <li class="server-product-price">$899.99 <abbr title="United States Dollars">USD</abbr> per month</li>
               </ul>
             </dd>
           </div>
         </dl>
-      </section>
-      <!-- Download PDF Product Sheet -->
-      <section id="product-sheet">
-        <h2>Product Sheet</h2>
-        <p>
-          Want to take control of a printer and float a hard copy to a friendly ghost? <a href="../files/gh_pricing.pdf" type="application/pdf" download>Click here to download our product portfolio in printable format</a>!
-        </p>
+        <!-- Download PDF Product Sheet -->
+        <a id="product-sheet" href="../files/gh_pricing.pdf" type="application/pdf" download>
+          <button>Download Product Sheet</button>
+        </a>
+        <div class="footer-divider"></div>
       </section>
     </main>
-    <div class="footer-divider"></div>
     <footer>
       <!-- Company information -->
       <div id="parallel-footer">
