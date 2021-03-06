@@ -62,15 +62,17 @@ button:active {
 }
 
 @media only screen and (min-width: 1000px) {
-  #banner img {
+  #logo-banner {
     margin: 16px auto 1% auto;
     width: 75%;
   }
 
-  button {
-    margin-top: 1%;
-    margin-bottom: 96px;
+  #product-button {
+    margin: 1% auto 128px auto;
     width: 30%;
+  }
+
+  button {
     border-radius: 12px;
   }
 
@@ -97,12 +99,12 @@ button:active {
 }
 
 @media only screen and (min-width: 1500px) {
-  #banner img {
+  #logo-banner {
     width: 75%;
     min-width: 300px;
   }
 
-  button {
+  #product-button {
     margin-top: 16px;
   }
 
