@@ -5,6 +5,14 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 255, 255, 0.5), ivory 85%);
 }
 
+a {
+  color: #0d6efd;
+}
+
+a:hover, a:focus {
+  color: #0a58ca;
+}
+
 @media only screen and (min-width: 1000px)  {
   body {
     background-image: linear-gradient(to bottom, rgba(0, 255, 255, 0.5) 10%, ivory 85%);
