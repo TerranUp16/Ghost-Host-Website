@@ -235,9 +235,9 @@ h2 {
 
   #pitch-text {
     flex-basis: 50%;
-    padding: 8px 24px 8px 24px;
+    padding: 0px 24px 8px 24px;
     margin-right: 5%;
-    background-color: yellow;
+    background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.5) 0%, silver 13%, yellow 13%, rgba(255, 255, 0, 0.5) 100%);
     border-radius: 25px;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
     font-size: 20px;
@@ -246,12 +246,14 @@ h2 {
   #pitch-text h2 {
     text-align: center;
     font-size: 28px;
+    color: rgba(0, 0, 0, 0.75);
   }
 }
 
 @media only screen and (min-width: 1500px) {
   #pitch-text {
     font-size: 24px;
+    background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.5) 0%, silver 15%, yellow 15%, rgba(255, 255, 0, 0.5) 100%);
   }
 
   #pitch-text h2 {
