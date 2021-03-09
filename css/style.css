@@ -13,12 +13,20 @@ a:hover, a:focus {
   color: #0a58ca;
 }
 
+a:visited {
+  color:rgba(96, 96, 96, 0.75);
+}
+
+/* Adjust the gradient for larger screens */
 @media only screen and (min-width: 1000px)  {
   body {
     background-image: linear-gradient(to bottom, rgba(0, 255, 255, 0.5) 10%, ivory 85%);
   }
 }
 
+/* Home page */
+
+/* Mobile-first banner image */
 #banner {
   display: flex;
   flex-direction: column;
@@ -41,6 +49,7 @@ a:hover, a:focus {
   width: 90%;
 }
 
+/* Set template for mobile-first buttons */
 button {
   display: block;
   margin: 0 auto 0 auto;
@@ -57,11 +66,12 @@ button {
   font-size: 30px;
 }
 
+/* Divide the two buttons slightly */
 #contact-button {
   border-top: 2px groove rgba(0, 0, 0, 0);
 }
 
-button:hover {
+button:hover, button:focus {
   text-shadow: 0 0 20px rgba(255, 255, 0, 1);
 }
 
@@ -69,6 +79,7 @@ button:active {
   box-shadow: 0 0 20px 0 rgba(255, 255, 0, 1) inset;
 }
 
+/* Make adjustments for larger screens */
 @media only screen and (min-width: 1000px) {
   #logo-banner {
     margin: 16px auto 1% auto;
@@ -84,7 +95,7 @@ button:active {
     border-radius: 12px;
   }
 
-  button:hover {
+  button:hover, button:focus {
     text-shadow: none;
     box-shadow: 0 0 20px 0 rgba(255, 255, 0, 1);
   }
@@ -93,6 +104,7 @@ button:active {
     text-shadow: 0 0 20px rgba(255, 255, 0, 1);
   }
 
+  /* On larger screens, place Contact button in top-right corner of screen */
   #contact-button button {
     position: absolute;
     right: 0;
@@ -106,6 +118,7 @@ button:active {
   }
 }
 
+/* Adjust spacing, sizing, and margins for the largest screens */
 @media only screen and (min-width: 1500px) {
   #logo-banner {
     width: 75%;
@@ -135,6 +148,7 @@ button:active {
   text-align: center;
 }
 
+/* Animated "Beyond" */
 @keyframes ghostly-beyond {
   0%    {color: rgba(0, 0, 255, 0);}
   25%   {color: rgba(0, 0, 255, 0.60);}
@@ -151,8 +165,8 @@ button:active {
   animation-timing-function: linear;
 }
 
+/* On larger screens, use a banner instead of a more traditional header setup */
 @media only screen and (min-width: 1000px) {
-
   #from-beyond {
     position:relative;
     width: 760px;
@@ -166,6 +180,7 @@ button:active {
   }
 }
 
+/* Adjust sizing on the largest screens */
 @media only screen and (min-width: 1500px) {
   #from-beyond {
     font-size: 32px;
@@ -173,6 +188,7 @@ button:active {
   }
 }
 
+/* Organize multiple content types */
 #main {
   display: flex;
   flex-direction: column;
@@ -183,6 +199,7 @@ h2 {
   color: rgba(0, 0, 0, 0.85);
 }
 
+/* Display image */
 .breaker {
   display: block;
   width: 100%;
@@ -191,6 +208,7 @@ h2 {
   background-size: cover;
 }
 
+/* Cap height of image for mobile */
 @media only screen and (max-width: 999px) {
   .breaker {
     height: 600px;
@@ -206,6 +224,7 @@ h2 {
   color: rgba(0, 0, 0, 0.75);
 }
 
+/* Mobile-first */
 #pitch {
   display: flex;
   flex-direction: column;
@@ -217,6 +236,7 @@ h2 {
   font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
+/* On larger screens, put image and card side-by-side */
 @media only screen and (min-width: 1000px) {
   #pitch {
     flex-direction: row;
@@ -250,6 +270,7 @@ h2 {
   }
 }
 
+/* Adjust font sizing and gradient for largest screens */
 @media only screen and (min-width: 1500px) {
   #pitch-text {
     font-size: 24px;
@@ -261,6 +282,7 @@ h2 {
   }
 }
 
+/* Use this as a "breaker" on mobile */
 #ghost {
   display: block;
   width: 25%;
@@ -268,6 +290,7 @@ h2 {
   margin-right: auto;
 }
 
+/* This isn't needed on desktop so remove it */
 @media only screen and (min-width: 1000px) {
   #ghost {
     display: none;
@@ -288,6 +311,7 @@ h2 {
   margin-bottom: 30px;
 }
 
+/* Same idea as with "Reach the Living..." */
 @media only screen and (min-width: 1000px) {
   #haunters {
     width: 760px;
@@ -309,6 +333,7 @@ h2 {
   }
 }
 
+/* Fine-tuning for the largest screens */
 @media only screen and (min-width: 1500px) {
   #haunters {
     width: 1025px;
@@ -324,11 +349,13 @@ h2 {
   }
 }
 
+/* Mobile-first */
 #testimonials {
   display: flex;
   flex-direction: column;
 }
 
+/* Use an image border to contain testimonials */
 .testimonial {
   border: 48px solid transparent;
   border-image: url(../images/ghost_border_1_small.png) 50% stretch;
@@ -338,6 +365,7 @@ h2 {
   padding: 10px;
 }
 
+/* Make the citations stand out */
 #customers .citation {
   padding-top: 12px;
   text-align: right;
@@ -348,6 +376,7 @@ h2 {
   font-weight: bold;
 }
 
+/* Enable two testimonials per row on desktop */
 @media only screen and (min-width: 1000px) {
   #testimonials {
     flex-direction: row;
@@ -362,6 +391,7 @@ h2 {
   }
 }
 
+/* Big button linking to products page */
 #get-started {
   margin: 40px 0 0 0;
 }
@@ -383,11 +413,14 @@ h2 {
   box-shadow: 0 0 20px 0 rgba(255, 255, 0, 1);
 }
 
-#get-started button:hover {
+#get-started button:hover, #get-started button:focus {
   box-shadow: none;
   text-shadow: 0 0 20px rgba(255, 255, 0, 1);
 }
 
+/* Footer */
+
+/* Use an image to divide the footer from the main page content */
 .footer-divider {
   width: 100%;
   height: 60px;
@@ -397,6 +430,7 @@ h2 {
   background-size: contain;
 }
 
+/* Increase size of this on desktop */
 @media only screen and (min-width: 1000px) {
   .footer-divider {
     height: 110px;
@@ -410,6 +444,7 @@ footer {
   padding-bottom: 20px;
 }
 
+/* Show legal disclaimer and Ghost Host Inc on same line */
 #parallel-footer {
   display: flex;
   flex-flow: row-reverse wrap;
@@ -442,6 +477,7 @@ footer {
   color:rgba(0, 0, 0, 0.65);
 }
 
+/* Fine-tune sizing for larger screens */
 @media only screen and (min-width: 1000px) {
   footer {
     margin: 16px 5% 16px 5%;
@@ -461,6 +497,9 @@ footer {
   }
 }
 
+/* Navigation bar */
+
+/* Navigation bar styling for non-home page */
 .navbar {
   background-image: linear-gradient(to right, rgba(0,0,0,0), midnightblue 20%, black 100%);
   display: flex;
@@ -488,6 +527,10 @@ footer {
   color: white;
 }
 
+.navbar a:visited {
+  color: white;
+}
+
 .navbar img {
   display: inline-block;
   height: 64px;
@@ -502,9 +545,10 @@ footer {
 
 .active-nav {
   background-color: yellow;
-  color: black;
+  color: black !important; /* Override .text-nav */
 }
 
+/* Adjust gradient for larger screen sizes */
 @media only screen and (min-width: 700px) {
   .navbar {
     background-image: linear-gradient(to right, rgba(0,0,0,0), midnightblue 15%, black 100%);
@@ -529,23 +573,14 @@ footer {
   }
 }
 
+/* Removed */
 #products-header {
   display: none;
-  margin: 0 auto 0 auto;
-  padding-top: 0;
-  text-align: center;
-  width: 500px;
-  background-color: yellow;
-  border-radius: 0 0 25px 25px;
 }
 
-#products-header h1 {
-  margin: 0;
-  padding: 10px 0 10px 0;
-  font-size: 64px;
-  color: rgba(0, 0, 0, 0.85);
-}
+/* Products page */
 
+/* Domains products section */
 #domains {
   background-image: url(../images/meeting.jpg);
   background-size: cover;
@@ -559,6 +594,7 @@ footer {
   border-bottom: 5px outset rgba(0, 0, 0, 0.25);
 }
 
+/* Title text for product */
 .product-category{
   margin: 0;
   padding-top: 10px;
@@ -567,6 +603,7 @@ footer {
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.75)
 }
 
+/* Text accompanying product title */
 .product-lead {
   padding: 0;
   margin: 0 auto 0 auto;
@@ -575,26 +612,27 @@ footer {
   font-size: 18px;
 }
 
+/* Responsive product card container */
 .products {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 30px auto 0 auto;
 }
 
+/* Frame cards more appropriately */
 @media only screen and (min-width: 820px) {
   .products {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 70%;
   }
 }
 
+/* Responsive product cards */
 .product {
   text-align: center;
-  width: 250px;
+  width: 300px;
   margin: 0 15px 20px 15px;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
 }
@@ -603,7 +641,7 @@ footer {
   background-color: #0d6efd;
   padding: 10px;
   border-radius: 5px 5px 0 0;
-  font-size: 20px;
+  font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -612,18 +650,36 @@ footer {
   color: rgba(0, 0, 0, 0.75);
   margin: 0;
   padding: 20px;
-  font-size: 18px;
+  font-size: 26px;
   border-radius: 0 0 5px 5px;
 }
 
+/* Scale down cards a bit as they do not need to be as big on these form factors- lets background compliment more */
+@media only screen and (min-width: 1000px) {
+  .product {
+    width: 250px;
+  }
+
+  .product dt {
+    font-size: 26px;
+  }
+
+  .product dd {
+    font-size: 20px;
+  }
+}
+
+/* Blend code tags for this section */
 .product code {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Blend abbreviation tags for this section */
 .product abbr, .server-product abbr {
   text-decoration: none;
 }
 
+/* Web hosting products section */
 #hosting {
   position: relative;
   background-image: url(../images/server.jpg);
@@ -637,6 +693,7 @@ footer {
   border-top: 5px outset rgba(0, 0, 0, 0.25);
 }
 
+/* Responsive product card container */
 .server-products {
   display: flex;
   flex-direction: column;
@@ -646,7 +703,8 @@ footer {
   margin: 30px auto 0 auto;
 }
 
-@media only screen and (min-width: 1000px) {
+/* Allow multiple cards per row on larger screens */
+@media only screen and (min-width: 1080px) {
   .server-products {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -655,6 +713,7 @@ footer {
   }
 }
 
+/* Nix li features */
 .specs {
   list-style-type: none;
   margin: 0;
@@ -664,8 +723,9 @@ footer {
   padding-inline-start: 0;
 }
 
+/* Responsive product card */
 .server-product {
-  position: relative;
+  position: relative; /* Will use this for .server-product-price later */
   width: 80%;
   height: 350px;
   text-align: center;
@@ -673,13 +733,15 @@ footer {
   border: 2px outset rgba(13, 90, 239, 0.25);
 }
 
-@media only screen and (min-width: 1000px) {
+/* Adjust card width for multi-column layout */
+@media only screen and (min-width: 1080px) {
   .server-product {
     width: 30%;
     max-width: 450px;
   }
 }
 
+/* Glow and "raise" on hover or focus */
 .server-product:hover, .server-product:focus {
   transition-property: box-shadow;
   transition-duration: 0.1s;
@@ -687,9 +749,10 @@ footer {
   z-index: 2;
 }
 
+
 .server-product dt {
   padding: 20px 10px 10px 10px;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -700,6 +763,7 @@ footer {
 }
 
 .server-product li {
+  font-size: 18px;
   padding: 2px 0 2px 0;
 }
 
@@ -713,10 +777,32 @@ footer {
 }
 
 .server-type {
-  font-size: 20px;
-  padding: 5px 0 10px 0 !important;
+  font-size: 26px !important; /* Deal with .server-product li having precedence */
+  padding: 5px 0 10px 0 !important; /* Deal with .server-product li having precedence */
 }
 
+/* Increase font size for smart phones because their web browsers are scaling text weirdly here */
+@media only screen and (min-width: 780px) {
+  .server-product li {
+    font-size: 22px;
+  }
+}
+
+/* Drop font size to accommodate multi-column layout better */
+@media only screen and (min-width: 1080px) {
+  .server-product li {
+    font-size: 16px;
+  }
+}
+
+/* Increase font size slightly for high-resolution desktop usersr */
+@media only screen and (min-width: 1700px) {
+  .server-product li {
+    font-size: 18px;
+  }
+}
+
+/* Position price at the bottom of the card */
 .server-product-price {
   position: absolute;
   bottom: 20px;
@@ -724,10 +810,11 @@ footer {
   transform: translate(-50%, 0%);
 }
 
+/* Adjust button for product page */
 #product-sheet > button {
   margin: 80px auto 0 auto;
   background-color: rgba(25, 25, 112, 0.85);
-  z-index: 1;
+  z-index: 1; /* Help make sure it appears over the footer runner */
 }
 
 @media only screen and (min-width: 1000px) {
@@ -741,7 +828,76 @@ footer {
   z-index: 1;
 }
 
+/* Make sure on the products page the divider overlaps the web hosting background image */
 #hosting .footer-divider {
   position: absolute;
   bottom: 0;
+}
+
+/* Contact page */
+
+/* Video intro animation */
+@keyframes boo {
+  0% { width: 100%; }
+  75% { width: 100%; }
+  100% {width: 0%; }
+}
+
+/* Video intro */
+#want-to-hear-from-boo {
+  animation: boo 4s linear 0s 1;
+  animation-fill-mode: both;
+}
+
+/* Title */
+#non-form-contact-methods h2, #non-form-contact-methods .lead {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* List of contact buttons */
+#direct-contact-methods {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#direct-contact-methods a {
+  width: 100%;
+  text-decoration: none;
+  display: block;
+}
+
+@media only screen and (min-width: 1000px) {
+  #direct-contact-methods {
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #direct-contact-methods a {
+    padding: 0 20px;
+    width: 500px;
+  }
+}
+
+/* Show phone number and fax number together */
+#call-fax {
+  width: 90%;
+  margin: 0 auto;
+  background-color: midnightblue;
+  border-radius: 12px;
+}
+
+.phone {
+  width: 50%;
+}
+
+.identifier {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
 }
