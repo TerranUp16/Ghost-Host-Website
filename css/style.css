@@ -853,6 +853,15 @@ footer {
 #non-form-contact-methods h2, #non-form-contact-methods .lead {
   width: 90%;
   margin: 0 auto;
+  text-align: center;
+}
+
+#non-form-contact-methods h2 {
+  font-size: 30px;
+}
+
+#non-form-contact-methods .lead {
+  font-size: 20px;
 }
 
 /* List of contact buttons */
@@ -870,34 +879,109 @@ footer {
   display: block;
 }
 
+#not-last {
+  border-bottom: 2px groove rgba(0, 0, 0, 0);
+}
+
+/* Make ovular, side-by-side buttons for desktop */
 @media only screen and (min-width: 1000px) {
   #direct-contact-methods {
     width: 90%;
+    margin: 20px auto;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   #direct-contact-methods a {
+    margin: 10px 0;
     padding: 0 20px;
     width: 500px;
+  }
+
+  #not-last {
+    border: none;
   }
 }
 
 /* Show phone number and fax number together */
 #call-fax {
+  display: flex;
   width: 90%;
-  margin: 0 auto;
-  background-color: midnightblue;
-  border-radius: 12px;
+  margin: 0 auto 20px auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .phone {
-  width: 50%;
+  display: block;
+  width: 400px;
+  margin: 5px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
+}
+
+.phone:hover, .phone:focus {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 0, 1);
+}
+
+.phone:active {
+  text-shadow: 0 0 20px rgba(255, 255, 0, 1);
 }
 
 .identifier {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
   background-color: yellow;
-  color: black;
-  font-weight: bold;
-  padding: 5px 10px;
+  color: midnightblue;
+  font-weight: bolder;
+  border-radius: 12px 0 0 12px;
+  font-size: 26px;
+}
+
+.p-number {
+  display: inline-block;
+  text-align: center;
+  width: 210px;
+  padding: 10px;
+  color: white;
+  background-color: midnightblue;
+  border-radius: 0 12px 12px 0;
+  font-size: 26px;
+}
+
+/* Synchronize pills with desktop button sizes */
+@media only screen and (min-width: 1000px) {
+  .phone {
+    width: 500px;
+  }
+
+  .identifier {
+    width: 180px;
+  }
+
+  .p-number {
+    width: 280px;
+  }
+}
+
+#hq-address {
+  width: 100%;
+}
+
+#hq-address img {
+  /*transform: rotate(20deg);*/
+  transform: rotate(10deg);
+  perspective: 100%;
+  width: 40%;
+  border-radius: 100% 100% 100% 90%;
+}
+
+#map {
+  border: 48px solid transparent;
+  border-image: url(../images/ghost_border_1_small.png) 50% stretch;
 }
