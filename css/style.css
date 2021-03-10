@@ -97,6 +97,7 @@ button:active {
 
   button:hover, button:focus {
     text-shadow: none;
+    text-shadow: 0 0 5px white;
     box-shadow: 0 0 20px 0 rgba(255, 255, 0, 1);
   }
 
@@ -416,6 +417,18 @@ h2 {
 #get-started button:hover, #get-started button:focus {
   box-shadow: none;
   text-shadow: 0 0 20px rgba(255, 255, 0, 1);
+}
+
+@media only screen and (min-width: 1000px) {
+  #get-started button:hover, #get-started button:focus {
+    text-shadow: 0 0 5px white;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 0, 1);
+  }
+
+  #get-started button:active {
+    text-shadow: 0 0 20px rgba(255, 255, 0, 1);
+    box-shadow: none;
+  }
 }
 
 /* Footer */
@@ -969,19 +982,289 @@ footer {
   }
 }
 
+/* Crawler mail map and address */
 #hq-address {
-  width: 100%;
+  width: 90%;
+  display: flex;
+  margin: 20px auto 10px auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-#hq-address img {
-  /*transform: rotate(20deg);*/
-  transform: rotate(10deg);
-  perspective: 100%;
-  width: 40%;
-  border-radius: 100% 100% 100% 90%;
-}
-
+/* Map with image border */
 #map {
+  width: 40%;
+  box-sizing: border-box;
   border: 48px solid transparent;
-  border-image: url(../images/ghost_border_1_small.png) 50% stretch;
+  border-image-source: url(../images/image_border.png);
+  border-image-slice: 33%;
+  border-image-width: 128px;
+  border-image-repeat: round;
+}
+
+/* Address container */
+#address {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Rotate and curve image */
+#address > img {
+  transform: rotate(-2deg);
+  width: 90%;
+  border-radius: 100% 5% 5% 90%;
+}
+
+/* Position header on image */
+#address > h2 {
+  position: absolute;
+  transform: rotate(-2deg);
+  z-index: 1;
+  right: -2%;
+  top: 5%;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+/* Fine-tune image location and sizing */
+@media only screen and (min-width: 650px) {
+  #address > h2 {
+    right: -5%;
+    font-size: 26px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #address > h2 {
+    right: -10%;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #address > h2 {
+    right: -10%;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #address > h2 {
+    right: -10%;
+    font-size: 48px;
+  }
+}
+
+/* Position address on top of image */
+#address address {
+  position: absolute;
+  transform: rotate(-2deg);
+  bottom: 15%;
+  left: 20%;
+  font-style: normal;
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+/* Fine-tune sizing and position */
+@media only screen and (min-width: 800px) {
+  #address address {
+    font-size: 22px;
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    bottom: 15%;
+    left: 15%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #address address {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    font-size: 16px;
+    bottom: 5%;
+    left: 35%;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  #address address {
+    font-size: 18px;
+    bottom: 5%;
+    left: 35%;
+  }
+}
+
+@media only screen and (min-width: 1290px) {
+  #address address {
+    font-size: 18px;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    bottom: 5%;
+    left: 44%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #address address {
+    font-size: 20px;
+    bottom: 5%;
+    left: 44%;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  #address address {
+    bottom: 4%;
+    left: 48%;
+  }
+}
+
+@media only screen and (min-width: 1890px) {
+  #address address {
+    bottom: 4%;
+    left: 55%;
+  }
+}
+
+/* Container for contact form */
+#contact-form {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#contact-form h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#contact-form .lead {
+  font-size: 1.25rem;
+  margin: 5px 0 30px 0;
+}
+
+/* Create a pill for entering email */
+#enter-email {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+}
+
+label[for="email"] {
+  display: block;
+  text-align: center;
+  width: 200px;
+  padding: 20px;
+  background-color: yellow;
+  color: midnightblue;
+  font-weight: bolder;
+  border-radius: 12px 0 0 12px;
+  font-size: 16px;
+}
+
+#email {
+  display: block;
+  text-align: center;
+  width: 250px;
+  padding: 20px 20px 19px 20px;
+  margin: 0;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  background-color: midnightblue;
+  color: white;
+  font-size: 16px;
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+#email::placeholder {
+  color: silver;
+}
+
+/* Fine-tune sizing */
+@media only screen and (min-width: 800px) {
+  label[for="email"] {
+    width: 300px;
+    font-size: 24px;
+  }
+
+  #email {
+    width: 400px;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #email {
+    width: 60%;
+  }
+}
+
+/* Create a message entry card */
+#enter-message {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label[for="message"] {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px 20px 10px 20px;
+  width: 100%;
+  background-color: yellow;
+  color: midnightblue;
+  font-weight: bolder;
+  font-size: 26px;
+  border-radius: 25px 25px 0 0;
+}
+
+#message {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  border-radius: 0 0 25px 25px;
+}
+
+#message::placeholder {
+  color: silver;
+}
+
+#submit-form {
+  display: block;
+  width: 100%;
+  height: 80px;
+  margin: 20px auto;
+  background-color: midnightblue;
+  color: white;
+  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border-style: none;
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 12px;
+}
+
+#submit-form:hover, #submit-form:focus {
+  text-shadow: 0 0 5px white;
+  box-shadow: 0 0 20px 0 yellow;
+}
+
+#submit-form:active {
+  text-shadow: 0 0 20px yellow;
 }

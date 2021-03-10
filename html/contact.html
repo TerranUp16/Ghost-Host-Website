@@ -44,25 +44,15 @@
           </a>
         </div>
         <div id="hq-address">
-          <img src="../images/hq.jpg" alt="Picture of Ghost Host HQ">
+          <img id="map" src="../images/ghost_host_map.png" alt="Street map view of Ghost Host location">
           <div id="address">
+            <img src="../images/hq.jpg" alt="Picture of Ghost Host HQ">
             <h2>Crawler Mail</h2>
-            <address>
-              Ghost Host Inc.<br>
-              666 Purgatory Lane<br>
-              Lake Buena Vista, Florida 32830
-            </address>
-          </div>
-        </div>
-        <dl>
-          <dt>By Crawler Mail</dt>
-          <dd>
             <address>Ghost Host Inc.<br>
               666 Purgatory Lane<br>
-              Lake Buena Vista, Florida 32830
-            </address>
-          </dd>
-        </dl>
+              Lake Buena Vista, Florida 32830</address>
+          </div>
+        </div>
       </section>
       <!-- Contact Form -->
       <section id="contact-form">
@@ -71,14 +61,15 @@
           If you have questions about our site or products, please feel free to use our form below to contact us. We'll get back to you within 48 hours.
         </p>
         <form action="#" method="GET">
-          <label for="email">Your Ghoul Mail Address:</label>
-          <input type="email" id="email" name="email" required>
-          <br>
-          <label for="message">Message:</label>
-          <br>
-          <textarea id="message" name="message" maxlength="9999" cols="100" rows="10" required></textarea>
-          <br>
-          <input type="submit" value="Submit">
+          <div id="enter-email">
+            <label for="email">Your Ghoul Mail Address:</label>
+            <input type="email" id="email" name="email" placeholder="close@ghosthost.com" required>
+          </div>
+          <div id="enter-message">
+            <label for="message">Enter your message for us:</label>
+            <textarea id="message" name="message" maxlength="9999" cols="100" rows="10" placeholder="Dear Ghost Host, " required></textarea>
+          </div>
+          <input id="submit-form" type="submit" value="Send Message">
         </form>
       </section>
     </main>
